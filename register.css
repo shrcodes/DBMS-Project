@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: url(pics/rback.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+    padding: 2px 0 20px 0;
+    /*box-shadow: 10px 10px 10px 10px #888888*/
+
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 40px 0px;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 620;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3f3e3e;
+}
+.txt_field input:focus~label,
+.txt_field input:valid~label{
+    top: -10px;
+    color: #4b4848;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width:100%;
+}
+
+.pass{
+    margin: -5px 0 20px -5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width:50%;
+    height:40px;
+    border: 1px ; 
+    background:linear-gradient(10deg,rgb(84, 66, 184),rgb(172, 77, 209));
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #edf0f1;
+    font-weight: 550;
+    cursor:pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    /* border-color: gray;  */
+    transition: 0.4s;
+
+}
+
+.Register{
+    margin:20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.Register a{
+    color: rgb(84, 66, 184);
+    text-decoration: none;
+
+}
+
+.Register a:hover{
+    text-decoration: underline;
+
+}
